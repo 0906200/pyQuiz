@@ -1,0 +1,16 @@
+{% extends 'subjects/base.html' %}
+
+{% block title %} Mathematics-level{% endblock %}
+
+{% block content %}
+
+<div class="list-group">
+
+  <a href="hard/{{ch}}" class="list-group-item list-group-item-action list-group-item-light"><h4>Hard</h4></a><br>
+  <a href="easy/{{ch}}" class="list-group-item list-group-item-action list-group-item-light"><h4>Easy</h4></a><br>
+  <a href="medium/{{ch}}" class="list-group-item list-group-item-action list-group-item-light"><h4>Medium</h4></a><br>
+
+</div>
+
+{% endblock %}
+{% block subname %} Mathematics level{% endblock %}

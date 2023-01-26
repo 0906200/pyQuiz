@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+<div id="content" name="content" class="main">
+    <form  method="post" action="">
+  {% load crispy_forms_tags %}
+  {% csrf_token %}
+  <div class="container">
+    <h1>Register</h1>
+
+    {{form|crispy}}
+    {{form.error}}
+
+  </div>
+
+<input type="submit">
+
+</form>
+<h4>Already i have an account? <a href="{% url 'login' %}">Signup now</a></h4>
+
+
+</div>
+
+
+</body>
+</html>

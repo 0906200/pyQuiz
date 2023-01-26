@@ -1,0 +1,15 @@
+{% extends 'subjects/base.html' %}
+
+{% block title %} chemistry-chapters{% endblock %}
+
+{% block content %}
+{% for ch in chem %}
+<div class="list-group">
+
+  <a href="chapters/level/{{ch.id}}" class="list-group-item list-group-item-action list-group-item-light"><h5><b>{{ch.id}}. {{ch}}</b></h5></a>
+  <br>
+
+</div>
+{% endfor %}
+{% endblock %}
+{% block subname %}Chemistry Chapters{% endblock %}

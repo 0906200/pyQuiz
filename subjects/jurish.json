@@ -1,0 +1,45 @@
+{
+	"intents":
+	[
+				{
+			"tag": "greeting",
+			"patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+			"responses": ["Hello, how can I help?", "Good to see you again", "Hi there, how can I help?"]
+        		},
+        		{
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "No, that's it"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
+                },
+                {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
+                },
+                {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+                },
+                {
+            "tag": "options",
+            "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+            "responses": ["I can help you with to tell  about our website. ", "I can provide the all the information about this website."]
+                },
+                {
+            "tag": "subjects",
+            "patterns": ["how many subjects in jee.", "what are the subjects in jee.", "jee question paper was based which subjects", "what subjects are come for jee","subjects for jee"],
+            "responses": ["there are 3 subjects for jee exam maths\n physics\n chemistry"]
+                },
+                {
+            "tag": "purpose of the website",
+            "patterns": ["what is the purpose of this website?","what is the use this website","usage of this website"],
+            "responses": ["for the board exam preperation", "It is usefull for practising the exam and how much you understanding the concepts","It is usefull for the preperation of jee exam and board exams"]
+                },
+                {
+            "tag": "joke",
+            "patterns": ["Tell me a joke", "I am feeling bored", "Joke please", "Make me laugh", "I want to laugh"],
+            "responses": ["I am tell my friend that  I feeling my life is a joke  He replayed dont say your life is a joke  me why?? he because the joke has the meaning.", "why are the cricket stadium is so cool?? \n Because the every seat have a fan in it","What did the cow says when it wanted to go to file "]
+                }
+        ]
+}

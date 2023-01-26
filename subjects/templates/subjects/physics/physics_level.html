@@ -1,0 +1,16 @@
+{% extends 'subjects/base.html' %}
+
+{% block title %} sub{% endblock %}
+
+{% block content %}
+
+<div class="list-group">
+
+  <a href="hard/{{ch}}" class="list-group-item list-group-item-action list-group-item-light"><h5><b>Hard</b></h5></a><br>
+  <a href="easy/{{ch}}" class="list-group-item list-group-item-action list-group-item-light"><h5><b>Easy</b></h5></a><br>
+  <a href="medium/{{ch}}" class="list-group-item list-group-item-action list-group-item-light"><h5><b>Medium</b></h5></a><br>
+
+</div>
+
+{% endblock %}
+{% block subname %}Physics level{% endblock %}

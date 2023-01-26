@@ -1,0 +1,36 @@
+{% extends 'subjects/base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block subname %}<b>  CHOOSE THE SUBJECT  </b>{% endblock %}
+{% block content %}
+<p>Hi {{request.user}} welcome to the wonderful Python Quiz this application, we hope that this application useful for your JEE or board exam preparation . </p>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://www.experimonkey.com/memes/meme-files/chemistry-cat.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Chemistry</h5>
+
+      <a href="chemistry/chapters" class="btn btn-primary">Start</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.pinimg.com/564x/c9/c2/ed/c9c2eded297b7fdc1afec92efc8921fd.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mathematics</h5>
+
+      <a href="maths/chapters" class="btn btn-primary">Start</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://5.imimg.com/data5/PZ/GP/EJ/SELLER-68307306/physics-tuition-500x500.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Physics</h5>
+
+      <a href="physics/chapters" class="btn btn-primary">Start</a>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+{% block act1 %}active{% endblock %}

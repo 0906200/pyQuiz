@@ -1,0 +1,32 @@
+{% extends "subjects/base.html" %}
+{% block title %} chemistry {% endblock %}
+
+{% block subname %}<h2>physics hard Level Question</h2> {% endblock %}
+
+{% block content %}
+
+  <form method="post" action="#">
+           {% csrf_token %}
+    {% for options in physics.all %}
+
+      <p>{{options.id}}) {{options.question}}</p>
+
+         {% for i in options.physicshardoptions_set.all %}
+
+
+           {% if i.answer == True %}
+                 <input type="radio" id="2" name="fav_language{{options.id}}" value="Q" >
+                 <label for="2">{{i}}</label><br>
+
+             {% else %}
+                <input type="radio" id="c" name="fav_language{{options.id}}" value="c">
+             <label for="c">{{i}}</label><br>
+           {% endif%}
+
+
+         {% endfor %}
+      {% endfor %}
+      <input type="submit" name="submit">
+    </form>
+
+{% endblock %}

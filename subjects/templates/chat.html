@@ -1,0 +1,30 @@
+{% extends 'subjects/base.html' %}
+{% block title %} Chat with jurish {% endblock %}
+
+{% block content %}
+
+<div class="card">
+  <div class="card-header">
+    Chat with jurish
+  </div>
+    <br>
+    <br>
+  <div class="card-body">
+      <form method="post">
+          {% csrf_token %}
+          <b>jurish:</b>{{messg}}<br>
+          <br>
+          <br>
+          <br>
+          <input name="user2" type="text">
+          <input type="submit" name="submit">
+      </form>
+
+    <p class="card-text"></p>
+
+  </div>
+</div>
+
+{% endblock %}
+
+

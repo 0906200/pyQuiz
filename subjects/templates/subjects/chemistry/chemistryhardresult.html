@@ -1,0 +1,18 @@
+{% extends 'subjects/base.html' %}
+
+{% block title %} chemistry result{% endblock %}
+
+{% block content %}
+<br>
+<div class="card">
+  <div class="card-header">
+    Your Chemistry Hard Level score
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"> SCORE - {{result}} </h5>
+    <p class="card-text"></p>
+    <a href="{% url 'progress' %}" class="btn btn-primary">Go To Progress</a>
+  </div>
+</div>
+{% endblock %}
+{% block subname %}<h4>Hello , {{request.user}}</h4>{% endblock %}
